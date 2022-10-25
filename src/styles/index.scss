@@ -1,0 +1,72 @@
+@import "normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #577751;
+}
+
+.popup {
+  position: absolute;
+  top: 15%;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0 auto;
+
+  .victoryText {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+.wrapper-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .buttons-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+
+    .volumeBtn {
+      width: 30px;
+      cursor: pointer;
+    }
+    .noVolumeBtn {
+      width: 30px;
+      cursor: pointer;
+      display: none;
+    }
+  }
+  .size-wrapper{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    margin-top: 10px;
+    div {
+      cursor: pointer;
+      transition: .1s;
+      &:hover {
+        color: #ff0000;
+        transition: .1s;
+      }
+    }
+  }
+  .time {
+    display: flex;
+  }
+  .canvas-title {
+    color: #fff;
+    text-align: center;
+  }
+}
